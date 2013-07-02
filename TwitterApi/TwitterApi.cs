@@ -7,7 +7,12 @@ using Hammock.Authentication.OAuth;
 
 namespace TwitterApi
 {
-
+    //https://github.com/abraham/twitteroauth/tree/master/twitteroauth
+    //https://dev.twitter.com/docs/twitter-libraries
+    //https://github.com/danielcrenna/hammock2
+    //http://stackoverflow.com/questions/3642873/cant-twitter-status-using-oauth-and-net-hammock-library-on-windows-phone-7
+    //http://www.diplo.co.uk/blog/2010/8/9/oauth-with-twitter.aspx
+    //
 
     public class TwitterApi
     {
@@ -15,10 +20,15 @@ namespace TwitterApi
         public TwitterApi(IOAuthConfiguration config)
         {
             _config = config;
-            config.Credentials.ConsumerKey = "GPdZTjmPRVXP2cgYgjMQ";
-            config.Credentials.ConsumerSecret = "LDh41edDBODdRXrvfAjaK5niYGjiaLilaSPDPYOH6LI";
-            config.Credentials.Token = "121460562-gtSI15AOjHgFWfDcAZu1xlAjb5Be0aPIVifo1TK9";
-            config.Credentials.TokenSecret = "AK4gADFtWpGOjWdQuku2ioEbENXNtS0W0m8LhX6hhA8";
+            _config.Credentials.ConsumerKey = "GPdZTjmPRVXP2cgYgjMQ";
+            _config.Credentials.ConsumerSecret = "LDh41edDBODdRXrvfAjaK5niYGjiaLilaSPDPYOH6LI";
+            _config.Credentials.Token = "121460562-gtSI15AOjHgFWfDcAZu1xlAjb5Be0aPIVifo1TK9";
+            _config.Credentials.TokenSecret = "AK4gADFtWpGOjWdQuku2ioEbENXNtS0W0m8LhX6hhA8";
+        }
+
+        public string GetTimeLine()
+        {
+            return "";
         }
     }
 
