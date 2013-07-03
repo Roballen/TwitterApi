@@ -19,11 +19,7 @@ namespace TwitterApi
         private IOAuthConfiguration _config;
         public TwitterApi(IOAuthConfiguration config)
         {
-            _config = config;
-            _config.Credentials.ConsumerKey = "GPdZTjmPRVXP2cgYgjMQ";
-            _config.Credentials.ConsumerSecret = "LDh41edDBODdRXrvfAjaK5niYGjiaLilaSPDPYOH6LI";
-            _config.Credentials.Token = "121460562-gtSI15AOjHgFWfDcAZu1xlAjb5Be0aPIVifo1TK9";
-            _config.Credentials.TokenSecret = "AK4gADFtWpGOjWdQuku2ioEbENXNtS0W0m8LhX6hhA8";
+///bad
         }
 
         public string GetTimeLine()
